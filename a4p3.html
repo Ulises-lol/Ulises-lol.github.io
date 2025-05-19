@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Unidad 3 | Actividad 04</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="Autor" content="Ulises Ramon Villagran Mendez ">
+  <meta name="Fecha" content="07 de mayo de 2025">
+  <meta name="Descripción" content="JavaScript">
+  <style>
+    li {
+      text-transform: uppercase;
+      color: white;
+      background-color: navy;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Unidad 3 | Actividad 04 :: Tema (JavaScript)</h1>
+  <ol>
+    <li id="valor_1"><strong>UPSLP</strong></li>
+    <li id="valor_2"></li>
+    <li id="valor_3"></li>
+    <li id="valor_4"></li>
+    <li id="valor_5"></li>
+    <li id="valor_6"></li>
+    <li id="valor_7"><strong>ITSLP <i>Campus San Luis Potosí</i></strong></li>
+    <li id="valor_8"></li>
+    <li id="valor_9"></li>
+    <li id="valor_10"></li>
+  </ol>
+
+  <script>
+    // Asignar contenido
+    document.getElementById("valor_2").textContent = "UCEM";
+
+    // Recuperar contenido de otros elementos
+    let varText = document.getElementById("valor_1").textContent;
+    let varTemp = document.getElementById("valor_3").textContent = varText + " ||| ";
+    document.getElementById("valor_6").textContent = varTemp;
+
+    // innerText
+    document.getElementById("valor_8").innerText = varText;
+    document.getElementById("valor_9").innerText = varTemp;
+
+    // innerHTML
+    document.getElementById("valor_7").innerHTML = varText;
+    document.getElementById("valor_10").innerHTML = varTemp;
+  </script>
+</body>
+</html>
